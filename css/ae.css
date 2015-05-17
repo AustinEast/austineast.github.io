@@ -218,7 +218,10 @@ hr {
     background-size: cover;
     -o-background-size: cover;
 }
-
+.engine-post p{
+    text-align: left;
+    padding-bottom: 30px;
+}
 .btn {
     border-radius: 0;
     text-transform: uppercase;
