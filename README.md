@@ -1,2 +1,4 @@
-# AustinEast.github.io
-My **OLD** personal Webpage. Served as the basis for my austineast.me
+# austineast.github.io
+A quick overview of my open source stuff :-)
+
+Github Widget from [here](https://github.com/jawj/github-widget)
