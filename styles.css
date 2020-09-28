@@ -44,6 +44,10 @@ section {
   max-width: 80%;
 }
 
+h2 {
+ text-align: center; 
+}
+
 #profile {
   border-radius: 50%;
   width: 100%;
