@@ -1,10 +1,40 @@
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --text: #454857;
+  --muted: #999;
+
+  --link: inherit;
+  --link-hover: #999;
+
+  --about-bg: rgb(195 206 189);
+  --about-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --text: #e6e8ef;
+    --muted: #a8acb8;
+
+    --link: inherit;
+    --link-hover: #c9ccd6;
+
+    --about-bg: #2b3a32;
+    --about-text: #e6e8ef;
+  }
+}
+
 body,html { 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  color: #454857;
   margin:0; 
   padding:0; 
   width:100%; 
   height:100%;
+
+  background: var(--bg);
+  color: var(--text);
 }
 main {
   display: flex;
@@ -16,26 +46,17 @@ main {
 a {
   transition: all 0.2s;
   text-decoration: underline;
+  color: var(--link);
 }
 
-a:link {
-  color: unset;
-}
-
-/* visited link */
+a:link,
 a:visited {
-  color: unset;
+  color: var(--link);
 }
 
-/* mouse over link */
-a:hover {
-  color: #999;
-  text-decoration: underline;
-}
-
-/* selected link */
+a:hover,
 a:active {
-  color: #999;
+  color: var(--link-hover);
 }
 
 section {
@@ -60,11 +81,11 @@ h2 {
 
 #about {
   width: 500px;
-  background-color:rgb(195 206 189);
+  background-color: var(--about-bg);
   border-radius: 1rem;
   padding: 0 1rem 1rem;
   box-sizing: border-box;
-  color: white;
+  color: var(--about-text);
 }
 
 #recent-things {
