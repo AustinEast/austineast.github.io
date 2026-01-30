@@ -8,7 +8,7 @@
   --link: inherit;
   --link-hover: #999;
 
-  --about-bg: rgb(195 206 189);
+  --about-bg: rgb(166 166 166);
   --about-text: #ffffff;
 }
 
@@ -21,7 +21,7 @@
     --link: inherit;
     --link-hover: #c9ccd6;
 
-    --about-bg: #2b3a32;
+    --about-bg: #2e2e2e;
     --about-text: #e6e8ef;
   }
 }
