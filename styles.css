@@ -26,6 +26,67 @@
   }
 }
 
+[data-theme="dark"] {
+  --bg: #0f1115;
+  --text: #e6e8ef;
+  --muted: #a8acb8;
+
+  --link: inherit;
+  --link-hover: #c9ccd6;
+
+  --about-bg: #2e2e2e;
+  --about-text: #e6e8ef;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #454857;
+  --muted: #999;
+
+  --link: inherit;
+  --link-hover: #999;
+
+  --about-bg: rgb(166 166 166);
+  --about-text: rgb(166 166 166);
+}
+
+#corner-buttons {
+  position: fixed;
+  top: 1rem;
+  /* 750px content + 36px padding + 1px border = 787px total → half is ~394px */
+  left: calc(50% + 394px + 0.5rem);
+  z-index: 100;
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* On narrow viewports where the section shrinks, fall back to top-right corner */
+@media (max-width: 850px) {
+  #corner-buttons {
+    left: auto;
+    right: 1rem;
+  }
+}
+
+.corner-btn {
+  background: var(--bg);
+  color: var(--text);
+  border: solid var(--text);
+  border-width: 0px 1px 1px 0px;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.corner-btn:hover {
+  color: var(--link-hover);
+  border-color: var(--link-hover);
+}
+
 body,html { 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   margin:0; 
