@@ -9,7 +9,7 @@
   --link-hover: #999;
 
   --about-bg: rgb(166 166 166);
-  --about-text: #ffffff;
+  --about-text: rgb(166 166 166);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,15 +81,22 @@ h2 {
 
 #about {
   width: 500px;
-  background-color: var(--about-bg);
-  border-radius: 1rem;
+  /* background-color: var(--about-bg); */
+  color: var(--text);
+  border: var(--text);
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-radius: 0.5rem;
   padding: 0 1rem 1rem;
   box-sizing: border-box;
-  color: var(--about-text);
 }
 
 #recent-things {
   width: 750px;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  padding: 0px 18px 14px 18px;
 }
 
 .clip{
